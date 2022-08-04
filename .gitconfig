@@ -1,0 +1,13 @@
+[user]
+  name  = Noel Espino Córdova
+  email = 12452210+slingercode@users.noreply.github.com
+
+[core]
+  editor = nvim
+
+[feth]
+  prune = true
+
+[init]
+  defaultBranch = main
+

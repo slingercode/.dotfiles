@@ -1,0 +1,11 @@
+{
+  "snippets.ultisnips.enable": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "jsonc"
+  ]
+}

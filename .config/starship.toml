@@ -1,0 +1,48 @@
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[x](bold red)"
+vicmd_symbol = "[<](bold green)"
+
+[git_commit]
+tag_symbol = " tag "
+
+[git_status]
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
+
+[deno]
+symbol = "deno "
+
+[directory]
+read_only = " ro"
+
+[docker_context]
+symbol = "docker "
+
+[git_branch]
+symbol = ""
+
+[golang]
+symbol = "go "
+
+[nodejs]
+symbol = "nodejs "
+
+[memory_usage]
+symbol = "memory "
+
+# [package]
+# symbol = "pkg "
+
+[python]
+symbol = "py "
+
+[rust]
+symbol = "rs "
+
+[sudo]
+symbol = "sudo "
+
