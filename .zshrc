@@ -3,6 +3,8 @@ case "$(uname)" in
   Linux*)     OS=Linux;;
 esac
 
+export GPG_TTY=$(tty)
+
 export GOPATH=~/Documents/develop/go/golib
 
 # If you come from bash you might have to change your $PATH.
@@ -17,7 +19,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-nvm)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -49,26 +51,16 @@ alias desk="cd ~/Desktop"
 alias down="cd ~/Downloads"
 alias dev="cd ~/Documents/develop"
 
-# Projects
-alias maquillajes="cd ~/Documents/develop/maquillajes"
-
-# Work
-alias web="cd ~/Documents/title/web"
-alias mr="cd ~/Documents/title/mr"
-alias graphql="cd ~/Documents/title/graphql"
-alias title="cd ~/Documents/title"
-
-# slinger aliases
-alias slinger="cd ~/Documents/develop/slingercode/slingercode"
-alias cloud="cd ~/Documents/develop/slingercode/cloud"
-
 # Git aliases
 alias st="git status"
-alias log="git log"
+alias log="git log --show-signature"
 alias logo="git log --oneline"
 
 # npm aliases
 alias npml="npm list -g --depth=0"
+
+# fnm
+eval "$(fnm env --use-on-cd)"
 
 # Set starship as shell
 eval "$(starship init zsh)"
