@@ -3,6 +3,7 @@ case "$(uname)" in
   Linux*)     OS=Linux;;
 esac
 
+# gpg
 export GPG_TTY=$(tty)
 
 export GOPATH=~/Documents/develop/go/golib
@@ -24,6 +25,12 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+# Bindings
+
+# Jumping words MacOs (Kitty terminal only)
+bindkey "\e[1;3D" backward-word   # ⌥ + <-
+bindkey "\e[1;3C" forward-word    # ⌥ + ->
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
