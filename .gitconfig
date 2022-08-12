@@ -1,7 +1,7 @@
 [user]
   name  = Noel Espino Córdova
   email = 12452210+slingercode@users.noreply.github.com
-  signingkey = 0345F1CA0F3AD813
+  signingkey = A1125D878050403B
 
 [core]
   editor = nvim
