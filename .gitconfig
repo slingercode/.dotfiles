@@ -1,7 +1,7 @@
 [user]
   name  = Noel Espino Córdova
   email = github@ednoesco.com
-  signingkey = A1125D878050403B
+  signingkey = 28CEAA1B67704969
 
 [core]
   editor = nvim
