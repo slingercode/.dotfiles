@@ -6,9 +6,15 @@
 [core]
   editor = nvim
 
-[fetch]
-  prune = true
-
 [init]
   defaultBranch = main
 
+[pull]
+  ff = true
+  rebase = true
+
+[fetch]
+  prune = true
+
+[log]
+  abbrevCommit = true
