@@ -4,16 +4,6 @@ export GPG_TTY=$(tty)
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# bun completions
-[ -s "/Users/ednoesco/.bun/_bun" ] && source "/Users/ednoesco/.bun/_bun"
-
-# Plugins
-plugins=(git)
-
 source $ZSH/oh-my-zsh.sh
 
 # Personal aliases
