@@ -20,7 +20,7 @@ vim.opt.showmode = false
 --  Schedule the setting after `UiEnter` because it can increase startup-time.
 --  See `:help 'clipboard'`
 vim.schedule(function()
-  vim.opt.clipboard = 'unnamedplus'
+    vim.opt.clipboard = 'unnamedplus'
 end)
 
 -- Enable break indent
@@ -45,3 +45,15 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 15
+
+-- Spaces instead of tabs
+vim.o.expandtab = true
+
+-- Tab indentation
+vim.o.tabstop = 4
+
+-- Number of spaces inserted instead of a TAB character
+vim.o.softtabstop = 4
+
+-- Number of spaces inserted when indenting
+vim.o.shiftwidth = 4
