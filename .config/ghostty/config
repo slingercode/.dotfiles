@@ -1,3 +1,9 @@
+## Configs
+
+window-inherit-working-directory = false
+
+## Visual
+
 font-family = TX-02
 font-style = Medium SemiCondensed
 
@@ -6,3 +12,4 @@ font-family = Berkeley Mono
 font-size = 16
 
 theme = vesper
+
