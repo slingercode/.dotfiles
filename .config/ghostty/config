@@ -2,14 +2,21 @@
 
 window-inherit-working-directory = false
 
+mouse-hide-while-typing = true
+
 ## Visual
 
+cursor-style = block
+
 font-family = TX-02
-font-style = Medium SemiCondensed
+font-style = Bold
 
 font-family = Berkeley Mono
 
 font-size = 16
 
 theme = vesper
+
+adjust-cell-height = 5%
+adjust-cell-width = 1%
 

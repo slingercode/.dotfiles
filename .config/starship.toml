@@ -46,3 +46,9 @@ symbol = "rs "
 [sudo]
 symbol = "sudo "
 
+[cmake]
+symbol = "cmake "
+
+[lua]
+symbol = "lua "
+
