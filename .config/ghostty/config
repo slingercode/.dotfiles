@@ -4,9 +4,12 @@ window-inherit-working-directory = false
 
 mouse-hide-while-typing = true
 
+shell-integration-features = no-cursor
+
 ## Visual
 
 cursor-style = block
+cursor-style-blink = false
 
 font-family = TX-02
 font-style = Bold
