@@ -1,23 +1,23 @@
-export VULKAN_SDK=/Users/slingercode/Documents/develop/VulkanSDK/1.3.290.0/macOS
-export DYLD_LIBRARY_PATH=$VULKAN_SDK/lib:$DYLD_LIBRARY_PATH
-export VK_ICD_FILENAMES=$VULKAN_SDK/share/vulkan/icd.d/MoltenVK_icd.json
-export VK_LAYER_PATH=$VULKAN_SDK/share/vulkan/explicit_layer.d
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
 
-export BUN_INSTALL=$HOME/.bun
+# Load Oh My Zsh configuration
+source $ZSH/oh-my-zsh.sh
 
-export GOPATH=$HOME/go
+# Path to personal dotfiles
+export DOTFILES=$HOME/.dotfiles
 
 # gpg
 export GPG_TTY=$(tty)
 
+# Path configuration
 export PATH=$PATH
-export PATH=$PATH:$BUN_INSTALL/bin
-export PATH=$PATH:$GOPATH:$HOME/go/bin
-export PATH=$PATH:$VULKAN_SDK/bin
 export PATH=$PATH:/opt/homebrew/opt/gnupg@2.2/bin
 
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+# Load aditional (optional) configuration files
+[ -s $DOTFILES/.rc/.vulkanrc ] && source $DOTFILES/.rc/.vulkanrc
+[ -s $DOTFILES/.rc/.bunrc ] && source $DOTFILES/.rc/.bunrc
+[ -s $DOTFILES/.rc/.gorc ] && source $DOTFILES/.rc/.gorc
 
 # Personal aliases
 alias vim="nvim"
@@ -47,11 +47,6 @@ eval "$(fnm env --use-on-cd)"
 
 # Set starship as shell
 eval "$(starship init zsh)"
-
-# bun completions
-[ -s "/Users/slingercode/.bun/_bun" ] && source "/Users/slingercode/.bun/_bun"
-
-source $ZSH/oh-my-zsh.sh
 
 source <(fzf --zsh)
 
