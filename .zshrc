@@ -31,7 +31,7 @@ alias desk="cd ~/Desktop"
 alias down="cd ~/Downloads"
 alias dev="cd ~/Documents/develop"
 
-alias rasp="kitten ssh slingercode@raspberry"
+alias rasp="ssh slingercode@raspberry"
 
 # Git aliases
 alias st="git status"
