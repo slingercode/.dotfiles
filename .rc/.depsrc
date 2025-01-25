@@ -1,0 +1,36 @@
+# fnm
+command -v fnm >/dev/null 2>&1 && eval "$(fnm env --use-on-cd)"
+
+# starship
+command -v starship >/dev/null 2>&1 && eval "$(starship init zsh)"
+
+# bat
+command -v bat >/dev/null 2>&1 && alias cat="bat"
+
+# nvim
+if command -v nvim >/dev/null 2>&1; then
+    alias vim="nvim"
+else
+    echo "nvim not installed"
+fi
+
+# ripgrep
+if command -v rg >/dev/null 2>&1; then
+    alias grep="rg"
+else
+    echo "ripgrep not installed"
+fi
+
+# fzf
+if command -v fzf >/dev/null 2>&1; then
+    source <(fzf --zsh)
+else
+    echo "fzf not installed"
+fi
+
+# make
+command -v make >/dev/null 2>&1 || echo "make not installed"
+
+# cmake
+command -v cmake >/dev/null 2>&1 || echo "cmake not installed"
+

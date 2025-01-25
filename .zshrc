@@ -14,18 +14,20 @@ export GPG_TTY=$(tty)
 export PATH=$PATH
 export PATH=$PATH:/opt/homebrew/opt/gnupg@2.2/bin
 
+# Load dependencies (fzf, cmake, etc...)
+[ -s $DOTFILES/.rc/.depsrc ] && source $DOTFILES/.rc/.depsrc
+
 # Load aditional (optional) configuration files
-[ -s $DOTFILES/.rc/.vulkanrc ] && source $DOTFILES/.rc/.vulkanrc
 [ -s $DOTFILES/.rc/.bunrc ] && source $DOTFILES/.rc/.bunrc
 [ -s $DOTFILES/.rc/.gorc ] && source $DOTFILES/.rc/.gorc
+[ -s $DOTFILES/.rc/.vulkanrc ] && source $DOTFILES/.rc/.vulkanrc
 
 # Personal aliases
-alias vim="nvim"
-alias cat="bat"
 alias dot="cd ~/.dotfiles"
 alias config="vim ~/.zshrc"
 alias vimconf="vim ~/.config/nvim/init.vim"
 
+alias home="cd $HOME"
 alias docs="cd ~/Documents"
 alias desk="cd ~/Desktop"
 alias down="cd ~/Downloads"
@@ -41,12 +43,4 @@ alias logo="git log --oneline"
 
 # npm aliases
 alias npml="npm list -g --depth=0"
-
-# fnm
-eval "$(fnm env --use-on-cd)"
-
-# Set starship as shell
-eval "$(starship init zsh)"
-
-source <(fzf --zsh)
 
