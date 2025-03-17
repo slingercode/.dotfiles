@@ -1,0 +1,58 @@
+{
+    "tab_size": 4,
+    "vim_mode": false,
+    "theme": "Vesper",
+    "formatter": "auto",
+    "cursor_blink": false,
+    "buffer_font_size": 14,
+    "buffer_font_family": "TX-02",
+    "git_panel": {
+        "button": true,
+        "dock": "right",
+        "default_width": 340
+    },
+    "assistant": {
+        "version": "2",
+        "button": false
+    },
+    "buffer_font_features": {
+        "calt": false
+    },
+    "chat_panel": {
+        "button": "never"
+    },
+    "collaboration_panel": {
+        "button": false
+    },
+    "features": {
+        "copilot": false,
+        "edit_prediction_provider": "none"
+    },
+    "outline_panel": {
+        "button": false
+    },
+    "notification_panel": {
+        "button": false
+    },
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "project_panel": {
+        "dock": "right",
+        "default_width": 340
+    },
+    "languages": {
+        "Zig": {
+            "format_on_save": "language_server",
+            "language_servers": ["zls"]
+        }
+    },
+    "lsp": {
+        "zls": {
+            "initialization_options": {
+                "zig_exe_path": "/Users/slingercode/Documents/bin/zig/0.14.0/zig"
+            }
+        }
+    }
+}

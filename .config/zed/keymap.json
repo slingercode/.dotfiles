@@ -1,0 +1,46 @@
+[
+    {
+        "context": "Editor",
+        "bindings": {
+            "alt-down": "editor::MoveLineDown",
+            "alt-up": "editor::MoveLineUp",
+            "cmd-l": "editor::SelectLine",
+            "cmd-shift-k": "editor::DeleteLine",
+            "cmd-shift-l": "editor::SelectAllMatches",
+            "ctrl-h": "editor::MoveLeft",
+            "ctrl-j": "editor::MoveDown",
+            "ctrl-k": "editor::MoveUp",
+            "ctrl-l": "editor::MoveRight"
+        }
+    },
+    {
+        "context": "Editor && mode == full",
+        "bindings": {
+            "cmd-shift-o": "outline::Toggle",
+            "cmd-g": "go_to_line::Toggle"
+        }
+    },
+    {
+        "context": "Pane",
+        "bindings": {
+            "cmd-\\ down": "pane::SplitDown",
+            "cmd-\\ left": "pane::SplitLeft",
+            "cmd-\\ right": "pane::SplitRight",
+            "cmd-\\ up": "pane::SplitUp"
+        }
+    },
+    {
+        "context": "AssistantPanel",
+        "bindings": {
+            "cmd-g": "search::SelectNextMatch",
+            "cmd-shift-g": "vim::SelectPreviousMatch"
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "cmd-b": "workspace::ToggleRightDock",
+            "cmd-shift-b": "workspace::ToggleLeftDock"
+        }
+    }
+]

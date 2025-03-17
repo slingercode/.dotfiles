@@ -17,10 +17,11 @@ export PATH=$PATH:/opt/homebrew/opt/gnupg@2.2/bin
 # Load dependencies (fzf, cmake, etc...)
 [ -s $DOTFILES/.rc/.depsrc ] && source $DOTFILES/.rc/.depsrc
 
-# Load aditional (optional) configuration files
+# Load additional (optional) configuration files
 [ -s $DOTFILES/.rc/.bunrc ] && source $DOTFILES/.rc/.bunrc
 [ -s $DOTFILES/.rc/.gorc ] && source $DOTFILES/.rc/.gorc
 [ -s $DOTFILES/.rc/.vulkanrc ] && source $DOTFILES/.rc/.vulkanrc
+[ -s $DOTFILES/.rc/.zigrc ] && source $DOTFILES/.rc/.zigrc
 
 # Personal aliases
 alias dot="cd ~/.dotfiles"
