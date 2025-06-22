@@ -33,4 +33,3 @@ command -v make >/dev/null 2>&1 || echo "make not installed"
 
 # cmake
 command -v cmake >/dev/null 2>&1 || echo "cmake not installed"
-

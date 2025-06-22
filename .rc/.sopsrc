@@ -1,0 +1,2 @@
+# Custom SOPS Age key file
+export SOPS_AGE_KEY_FILE=~/.sops/age.key

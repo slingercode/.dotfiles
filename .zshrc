@@ -14,14 +14,17 @@ export GPG_TTY=$(tty)
 export PATH=$PATH
 export PATH=$PATH:/opt/homebrew/opt/gnupg@2.2/bin
 
+# Load secrets
+[ -s $DOTFILES/secrets/.secretsrc ] && source $DOTFILES/secrets/.secretsrc
+
 # Load dependencies (fzf, cmake, etc...)
 [ -s $DOTFILES/.rc/.depsrc ] && source $DOTFILES/.rc/.depsrc
 
 # Load additional (optional) configuration files
 [ -s $DOTFILES/.rc/.bunrc ] && source $DOTFILES/.rc/.bunrc
 [ -s $DOTFILES/.rc/.gorc ] && source $DOTFILES/.rc/.gorc
+[ -s $DOTFILES/.rc/.sopsrc ] && source $DOTFILES/.rc/.sopsrc
 [ -s $DOTFILES/.rc/.vulkanrc ] && source $DOTFILES/.rc/.vulkanrc
-[ -s $DOTFILES/.rc/.zigrc ] && source $DOTFILES/.rc/.zigrc
 
 # Personal aliases
 alias dot="cd ~/.dotfiles"
@@ -44,4 +47,3 @@ alias logo="git log --oneline"
 
 # npm aliases
 alias npml="npm list -g --depth=0"
-
