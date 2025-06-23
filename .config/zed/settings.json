@@ -4,16 +4,17 @@
     "theme": "Vesper",
     "formatter": "auto",
     "cursor_blink": false,
-    "buffer_font_size": 14,
+    "cursor_shape": "block",
+    "buffer_font_size": 15,
     "buffer_font_family": "TX-02",
     "git_panel": {
         "button": true,
         "dock": "right",
         "default_width": 340
     },
-    "assistant": {
+    "agent": {
         "version": "2",
-        "button": false
+        "button": true
     },
     "buffer_font_features": {
         "calt": false
@@ -25,7 +26,6 @@
         "button": false
     },
     "features": {
-        "copilot": false,
         "edit_prediction_provider": "none"
     },
     "outline_panel": {
@@ -41,18 +41,5 @@
     "project_panel": {
         "dock": "right",
         "default_width": 340
-    },
-    "languages": {
-        "Zig": {
-            "format_on_save": "language_server",
-            "language_servers": ["zls"]
-        }
-    },
-    "lsp": {
-        "zls": {
-            "initialization_options": {
-                "zig_exe_path": "/Users/slingercode/Documents/bin/zig/0.14.0/zig"
-            }
-        }
     }
 }

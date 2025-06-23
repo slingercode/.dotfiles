@@ -23,8 +23,13 @@ export PATH=$PATH:/opt/homebrew/opt/gnupg@2.2/bin
 # Load additional (optional) configuration files
 [ -s $DOTFILES/.rc/.bunrc ] && source $DOTFILES/.rc/.bunrc
 [ -s $DOTFILES/.rc/.gorc ] && source $DOTFILES/.rc/.gorc
+[ -s $DOTFILES/.rc/.homebrewrc ] && source $DOTFILES/.rc/.homebrewrc
+[ -s $DOTFILES/.rc/.pnpmrc ] && source $DOTFILES/.rc/.pnpmrc
 [ -s $DOTFILES/.rc/.sopsrc ] && source $DOTFILES/.rc/.sopsrc
 [ -s $DOTFILES/.rc/.vulkanrc ] && source $DOTFILES/.rc/.vulkanrc
+
+# Load private configuration
+[ -s $DOTFILES/secrets/.privaterc ] && source $DOTFILES/secrets/.privaterc
 
 # Personal aliases
 alias dot="cd ~/.dotfiles"

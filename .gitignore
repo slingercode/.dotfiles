@@ -2,5 +2,7 @@
 .config/zed/prompts
 .config/zed/themes
 
+secrets/.gitconfig
+secrets/.privaterc
 secrets/.secretsrc
 secrets/tx-02.otf
