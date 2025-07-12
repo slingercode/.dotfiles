@@ -52,3 +52,7 @@ alias logo="git log --oneline"
 
 # npm aliases
 alias npml="npm list -g --depth=0"
+
+# nix aliases
+alias nix-run="sudo nix run nix-darwin -- switch --flake ."
+alias nix-rebuild="sudo darwin-rebuild switch --flake ."
