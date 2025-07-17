@@ -11,6 +11,7 @@ curl -fsSL https://install.determinate.systems/nix | sh -s -- install
 
 - [nix-darwin](https://github.com/nix-darwin/nix-darwin)
 - [Nix on MacOS](https://nixcademy.com/posts/nix-on-macos)
+- [Mitchell Hashimoto Nix Config 🗿](https://github.com/mitchellh/nixos-config)
 
 ## SOPS
 
