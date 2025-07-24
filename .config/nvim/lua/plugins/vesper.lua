@@ -16,4 +16,3 @@ return {
         vim.cmd("colorscheme vesper")
     end
 }
-

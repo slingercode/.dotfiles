@@ -22,4 +22,3 @@ return {
         -- vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
     end
 }
-

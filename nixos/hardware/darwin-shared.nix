@@ -47,6 +47,8 @@
 
     minimize-to-application = false;
     
+    show-recents = false;
+    
     persistent-apps = [
       "/Applications/Brave\ Browser.app"
       "/Applications/Ghostty.app"

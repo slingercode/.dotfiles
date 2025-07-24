@@ -2,11 +2,20 @@
 
 ## Nix
 
+> Form some reason and I don't know if is a requirement but install ZSH before Nix
+
 Install using Nix using [DeterminateSystems](https://github.com/DeterminateSystems/nix-installer), and run:
 
+> Recommended vanilla upstream and select "no" when prompted to install Determinate Nix
+
 ```bash
-# Recommended vanilla upstream and select "no" when prompted to install Determinate Nix.
 curl -fsSL https://install.determinate.systems/nix | sh -s -- install
+```
+
+And in the fist run `darwin-rebuild` is not available so there is the option to:
+
+```bash
+sudo nix run nix-darwin -- switch --flake .#macbook-pro-intel
 ```
 
 - [nix-darwin](https://github.com/nix-darwin/nix-darwin)
@@ -35,6 +44,16 @@ exec: "docker-credential-desktop.exe": executable file not found in $PATH
 ```
 
 just delete `credsStore` from `~/.docker/config.json`
+
+#### Home Manager
+
+- [declarative macos management with nix-darwin and home-manager](https://carlosvaz.com/posts/declarative-macos-management-with-nix-darwin-and-home-manager)
+
+### TODO
+
+- Auto link ssh and gpg
+- Auto simlinks of files
+- Move zsh configs to nix files
 
 ## SOPS
 

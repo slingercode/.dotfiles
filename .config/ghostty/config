@@ -32,4 +32,3 @@ shell-integration-features = no-cursor
 
 keybind = shift+ctrl+l=new_split:right
 keybind = shift+ctrl+j=new_split:down
-
