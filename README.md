@@ -15,6 +15,14 @@ curl -fsSL https://install.determinate.systems/nix | sh -s -- install
 
 ### Darwin
 
+#### AppleSymbolicHotKeys (keyboard shortcuts)
+
+Kinda of a hard time figuring out this but now it works (except for services -> text -> convert to chinese bla bla)
+
+- [Setting keyboard shortcuts in nix darwin](https://www.reddit.com/r/NixOS/comments/17n3tcn/setting_keyboard_shortcuts_in_nix_darwin)
+- [Undocumented SymbolicHotKey extracted from CGSHotKeys.h](https://gist.github.com/mkhl/455002#file-ctrl-f1-c-L12)
+- [nix darwin - Keyboard shortcuts update](https://github.com/nix-darwin/nix-darwin/pull/699/files)
+
 #### Docker
 
 `virtualisation.docker.enable = true;` is not available on MacOs, so the best approach is use [Colima](https://github.com/abiosoft/colima)

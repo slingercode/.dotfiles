@@ -25,6 +25,22 @@
   # Required for some settings like homebrew to know what user to apply to.
   system.primaryUser = "ednoesco";
 
+  # Symbolic hotkeys
+  #
+  # Check readme for symbolic code documentation
+  system.defaults.CustomUserPreferences = {
+    "com.apple.symbolichotkeys" = {
+      AppleSymbolicHotKeys = {
+        "50".enabled = false; # kCGSHotKeyToggleCharacterPallette
+        "52".enabled = false; # kCGSHotKeyToggleDockAutohide
+        "60".enabled = false; # kCGSHotKeySelectPreviousInputSource
+        "61".enabled = false; # kCGSHotKeySelectNextInputSource
+        "64".enabled = false; # kCGSHotKeySpotlightSearchField
+        "65".enabled = false; # kCGSHotKeySpotlightWindow
+      };
+    };
+  };
+
   # Dock configuration
   system.defaults.dock = {
     autohide = true;
@@ -35,6 +51,7 @@
       "/Applications/Brave\ Browser.app"
       "/Applications/Ghostty.app"
       "/Applications/Visual\ Studio\ Code.app"
+      "/Applications/Discord.app"
       "/System/Applications/Music.app"
       "/System/Applications/System\ Settings.app/"
     ];

@@ -6,6 +6,7 @@
 
     casks = [
       "brave-browser"
+      "discord"
       "ghostty"
       "mullvad-vpn"
       "raycast"
