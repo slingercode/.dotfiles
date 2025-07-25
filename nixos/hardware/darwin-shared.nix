@@ -18,6 +18,8 @@
   # programs.fish.enable = true;
   programs.zsh.enable = true;  # default shell on catalina
 
+  environment.variables.EDITOR = "nvim";   
+
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
   system.stateVersion = 6;

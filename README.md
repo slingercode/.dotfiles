@@ -66,3 +66,18 @@ sops -e secrets/.secretsrc > secrets/.secretsrc-enc
 # Decrypt
 sops -d secrets/.secretsrc-enc > secrets/.secretsrc
 ```
+
+## TMUX
+
+```bash
+tmux list-sessions
+```
+
+```bash
+tmux kill-server
+```
+
+- [TMUX Ghostty - Mansoor Barri](https://mansoorbarri.com/tmux-ghostty)
+- [Reddit - Perfect Ghostty TMUX Config](https://www.reddit.com/r/Ghostty/comments/1hoi3id/my_perfect_ghostty_tmux_nvim_configuration_on)
+    - [Gist Ghostty Config](https://gist.github.com/oca159/5124a22012b1887bbf2b6e2cc1f9e574)
+    - [Gist TMUX Config](https://gist.github.com/oca159/69f7aab040d3f462cc26accabbd4ea67)

@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     age
     bat
+    btop
     fzf
     gnupg
     neovim
@@ -12,6 +13,8 @@
     sops
     starship
     tree-sitter
+    tmux
+    tmuxinator
     vim
   ];
 }
