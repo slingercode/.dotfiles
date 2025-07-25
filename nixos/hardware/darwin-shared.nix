@@ -18,14 +18,19 @@
   # programs.fish.enable = true;
   programs.zsh.enable = true;  # default shell on catalina
 
-  environment.variables.EDITOR = "nvim";   
-
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
   system.stateVersion = 6;
 
   # Required for some settings like homebrew to know what user to apply to.
   system.primaryUser = "ednoesco";
+
+  home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    
+    users.ednoesco = import ../../home.nix;
+  };
 
   # Symbolic hotkeys
   #

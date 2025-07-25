@@ -49,12 +49,6 @@ just delete `credsStore` from `~/.docker/config.json`
 
 - [declarative macos management with nix-darwin and home-manager](https://carlosvaz.com/posts/declarative-macos-management-with-nix-darwin-and-home-manager)
 
-### TODO
-
-- Auto link ssh and gpg
-- Auto simlinks of files
-- Move zsh configs to nix files
-
 ## SOPS
 
 - Install [Mozilla SOPS](https://github.com/getsops/sops) and [AGE](https://github.com/FiloSottile/age)

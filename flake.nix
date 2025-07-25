@@ -22,9 +22,24 @@
       url = "github:homebrew/homebrew-cask";
       flake = false;
     };
+
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, nix-darwin, nix-homebrew, homebrew-core, homebrew-cask, ... }@inputs:
+  outputs = {
+    self,
+    nixpkgs,
+    nix-darwin,
+    nix-homebrew,
+    homebrew-core,
+    homebrew-cask,
+    home-manager,
+    ...
+  }@inputs:
+
   {
     # sudo darwin-rebuild switch --flake .#macbook-pro-arm
     darwinConfigurations.macbook-pro-arm = nix-darwin.lib.darwinSystem {
@@ -33,6 +48,7 @@
       modules = [
         ./nixos/aarch64-darwin.nix
         nix-homebrew.darwinModules.nix-homebrew
+        home-manager.darwinModules.home-manager
       ];
 
       specialArgs = { inherit homebrew-core homebrew-cask; };
@@ -45,6 +61,7 @@
       modules = [
         ./nixos/x86_64-darwin.nix
         nix-homebrew.darwinModules.nix-homebrew
+        home-manager.darwinModules.home-manager
       ];
 
       specialArgs = { inherit homebrew-core homebrew-cask; };
