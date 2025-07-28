@@ -12,6 +12,11 @@ source $ZSH/oh-my-zsh.sh
 # Load private configuration
 [ -s $DOTFILES/secrets/.privaterc ] && source $DOTFILES/secrets/.privaterc
 
+# Temporal aliases
+alias vim="nvim"
+alias cat="bat"
+alias grep="rg"
+
 # Personal aliases
 alias dot="cd ~/.dotfiles"
 alias config="vim ~/.zshrc"

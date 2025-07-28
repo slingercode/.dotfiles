@@ -47,4 +47,14 @@
       logo = "git log --oneline";
     };
   };
+
+  programs.gpg = {
+    enable = true;
+
+    publicKeys = [
+      {
+        source = ./gpg/github-public.key; 
+      }
+    ];
+  };
 }

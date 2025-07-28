@@ -53,12 +53,16 @@ just delete `credsStore` from `~/.docker/config.json`
 
 - Install [Mozilla SOPS](https://github.com/getsops/sops) and [AGE](https://github.com/FiloSottile/age)
 
-```bash
-# Encrypt
-sops -e secrets/.secretsrc > secrets/.secretsrc-enc
+##### Encrypt
 
-# Decrypt
-sops -d secrets/.secretsrc-enc > secrets/.secretsrc
+```bash
+sops -e secrets/private_keys.yaml > secrets/.private_keys.enc.yaml
+```
+
+##### Decrypt
+
+```bash
+sops -d secrets/.private_keys.enc.yaml > secrets/private_keys.yaml
 ```
 
 ## TMUX
