@@ -56,13 +56,13 @@ just delete `credsStore` from `~/.docker/config.json`
 ##### Encrypt
 
 ```bash
-sops -e secrets/private_keys.yaml > secrets/.private_keys.enc.yaml
+sops -e secrets/private_keys.yaml > secrets/private_keys.enc.yaml
 ```
 
 ##### Decrypt
 
 ```bash
-sops -d secrets/.private_keys.enc.yaml > secrets/private_keys.yaml
+sops -d secrets/private_keys.enc.yaml > secrets/private_keys.yaml
 ```
 
 ## TMUX

@@ -14,9 +14,6 @@ export GPG_TTY=$(tty)
 export PATH=$PATH
 export PATH=$PATH:/opt/homebrew/opt/gnupg@2.2/bin
 
-# Load secrets
-[ -s $DOTFILES/secrets/.secretsrc ] && source $DOTFILES/secrets/.secretsrc
-
 # Load dependencies (fzf, cmake, etc...)
 [ -s $DOTFILES/.rc/.depsrc ] && source $DOTFILES/.rc/.depsrc
 
@@ -43,7 +40,7 @@ alias down="cd ~/Downloads"
 alias dev="cd ~/Documents/develop"
 
 alias rasp="ssh slingercode@raspberry"
-alias ghosttytmux="./.dotfiles/.config/ghostty/ghostty-tmux.sh"
+alias ghosttytmux="~/.dotfiles/.config/ghostty/ghostty-tmux.sh"
 
 # Git aliases
 alias st="git status"

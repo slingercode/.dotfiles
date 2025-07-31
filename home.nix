@@ -14,6 +14,12 @@
     ".config/nvim".source = ./.config/nvim;
     ".config/tmuxinator".source = ./.config/tmuxinator;
     ".config/zed".source = ./.config/zed;
+
+    ".sops/README.md".text = ''
+      # SOPS AGE KEY DIRECTORY
+
+      PASTE THE `age.key` FILE IN THIS FOLDER
+    '';
   };
 
   programs.zsh = {
@@ -23,6 +29,8 @@
       EDITOR = "nvim";
 
       HOMEBREW_NO_ANALYTICS = "1";
+
+      SOPS_AGE_KEY_FILE="~/.sops/age.key";
     };
 
     # Not working for some reason

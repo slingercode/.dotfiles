@@ -27,6 +27,11 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -37,6 +42,7 @@
     homebrew-core,
     homebrew-cask,
     home-manager,
+    sops-nix,
     ...
   }@inputs:
 
@@ -49,6 +55,7 @@
         ./nixos/aarch64-darwin.nix
         nix-homebrew.darwinModules.nix-homebrew
         home-manager.darwinModules.home-manager
+        sops-nix.darwinModules.sops
       ];
 
       specialArgs = { inherit homebrew-core homebrew-cask; };
@@ -62,6 +69,7 @@
         ./nixos/x86_64-darwin.nix
         nix-homebrew.darwinModules.nix-homebrew
         home-manager.darwinModules.home-manager
+        sops-nix.darwinModules.sops
       ];
 
       specialArgs = { inherit homebrew-core homebrew-cask; };
