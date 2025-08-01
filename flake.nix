@@ -58,7 +58,7 @@
         sops-nix.darwinModules.sops
       ];
 
-      specialArgs = { inherit homebrew-core homebrew-cask; };
+      specialArgs = { inherit homebrew-core homebrew-cask sops-nix; };
     };
 
     # sudo darwin-rebuild switch --flake .#macbook-pro-intel
@@ -72,7 +72,7 @@
         sops-nix.darwinModules.sops
       ];
 
-      specialArgs = { inherit homebrew-core homebrew-cask; };
+      specialArgs = { inherit homebrew-core homebrew-cask sops-nix; };
     };
   };
 }

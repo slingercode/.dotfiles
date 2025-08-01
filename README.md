@@ -53,16 +53,18 @@ just delete `credsStore` from `~/.docker/config.json`
 
 - Install [Mozilla SOPS](https://github.com/getsops/sops) and [AGE](https://github.com/FiloSottile/age)
 
+> To modify the `secrets.yaml` just `cd` into the `secrets` directory and run `sops secrets.yaml`
+
 ##### Encrypt
 
 ```bash
-sops -e secrets/private_keys.yaml > secrets/private_keys.enc.yaml
+sops -e secrets/.privaterc > secrets/.privaterc-enc
 ```
 
 ##### Decrypt
 
 ```bash
-sops -d secrets/private_keys.enc.yaml > secrets/private_keys.yaml
+sops -d secrets/.privaterc-enc > secrets/.privaterc
 ```
 
 ## TMUX

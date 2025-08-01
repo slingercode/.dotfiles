@@ -5,5 +5,4 @@
 secrets/.gitconfig
 secrets/.privaterc
 secrets/.secretsrc
-secrets/private_keys.yaml
 secrets/tx-02.otf

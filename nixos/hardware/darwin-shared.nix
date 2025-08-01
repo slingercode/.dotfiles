@@ -1,4 +1,4 @@
-{ config, pkgs, homebrew-core, homebrew-cask, ... }:
+{ config, pkgs, homebrew-core, homebrew-cask, sops-nix, ... }:
 
 {
   imports = [
@@ -28,6 +28,8 @@
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
+
+    sharedModules = [ sops-nix.homeManagerModules.sops ];
     
     users.ednoesco = import ../../home.nix;
   };

@@ -20,6 +20,10 @@
 
       PASTE THE `age.key` FILE IN THIS FOLDER
     '';
+
+    ".ssh/github_id_ed25519.pub".text = ''
+      ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF2m+xPVTJtkSKxrjdFT10XSCfUvpOf3QLH0toekBA0j github@ednoesco.com
+    '';
   };
 
   programs.zsh = {
@@ -56,6 +60,15 @@
     };
   };
 
+  sops = {
+    defaultSopsFile = ./secrets/secrets.yaml;
+    age.keyFile = "${config.home.homeDirectory}/.sops/age.key";
+
+    secrets."ssh/github" = {
+      path = "${config.home.homeDirectory}/.ssh/github_id_ed25519";
+    };
+  };
+
   programs.gpg = {
     enable = true;
 
@@ -64,5 +77,15 @@
         source = ./gpg/github-public.key; 
       }
     ];
+  };
+
+  programs.ssh = {
+    enable = true;
+
+    extraConfig = ''
+      Host github.com
+      IdentityFile ~/.ssh/github_id_ed25519
+      IdentitiesOnly yes
+    '';
   };
 }
