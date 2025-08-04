@@ -25,6 +25,15 @@
   # Required for some settings like homebrew to know what user to apply to.
   system.primaryUser = "ednoesco";
 
+  # Set the hosts file. nix-darwin does not recognize networking.extraHosts so this is the best approach.
+  environment.etc."hosts" = {
+    text = ''
+      127.0.0.1       localhost
+      255.255.255.255 broadcasthost
+      ::1             localhost
+    '';
+  };
+
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;

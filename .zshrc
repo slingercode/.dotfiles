@@ -39,7 +39,7 @@ alias desk="cd ~/Desktop"
 alias down="cd ~/Downloads"
 alias dev="cd ~/Documents/develop"
 
-alias rasp="ssh slingercode@raspberry"
+alias rasp="ssh ednoesco@raspberrypi"
 alias ghosttytmux="~/.dotfiles/.config/ghostty/ghostty-tmux.sh"
 
 # Git aliases
