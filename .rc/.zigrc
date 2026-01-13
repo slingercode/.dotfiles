@@ -1,6 +1,6 @@
 export ZIG_INSTALL=$HOME/Documents/bin/zig
 
-ZIG_VERSION=0.14.0
+ZIG_VERSION=0.15.2
 
 export ZIG_PATH=$ZIG_INSTALL/$ZIG_VERSION
 

@@ -12,7 +12,6 @@ export GPG_TTY=$(tty)
 
 # Path configuration
 export PATH=$PATH
-export PATH=$PATH:/opt/homebrew/opt/gnupg@2.2/bin
 
 # Load secrets
 [ -s $DOTFILES/secrets/.secretsrc ] && source $DOTFILES/secrets/.secretsrc
@@ -27,6 +26,7 @@ export PATH=$PATH:/opt/homebrew/opt/gnupg@2.2/bin
 [ -s $DOTFILES/.rc/.pnpmrc ] && source $DOTFILES/.rc/.pnpmrc
 [ -s $DOTFILES/.rc/.sopsrc ] && source $DOTFILES/.rc/.sopsrc
 [ -s $DOTFILES/.rc/.vulkanrc ] && source $DOTFILES/.rc/.vulkanrc
+[ -s $DOTFILES/.rc/.zigrc ] && source $DOTFILES/.rc/.zigrc
 
 # Load private configuration
 [ -s $DOTFILES/secrets/.privaterc ] && source $DOTFILES/secrets/.privaterc
@@ -42,13 +42,9 @@ alias desk="cd ~/Desktop"
 alias down="cd ~/Downloads"
 alias dev="cd ~/Documents/develop"
 
-alias rasp="ssh slingercode@raspberry"
-
 # Git aliases
 alias st="git status"
 alias fetch="git fetch"
 alias log="git log --show-signature --stat-width=100"
 alias logo="git log --oneline"
 
-# npm aliases
-alias npml="npm list -g --depth=0"
