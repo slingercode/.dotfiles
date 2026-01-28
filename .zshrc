@@ -32,7 +32,7 @@ export PATH=$PATH
 # Personal aliases
 alias dot="cd ~/.dotfiles"
 alias config="vim ~/.zshrc"
-alias vimconf="vim ~/.config/nvim/init.vim"
+alias vimconfig="vim ~/.config/nvim/init.vim"
 
 alias home="cd $HOME"
 alias docs="cd ~/Documents"
@@ -45,4 +45,3 @@ alias st="git status"
 alias fetch="git fetch"
 alias log="git log --show-signature --stat-width=100"
 alias logo="git log --oneline"
-
