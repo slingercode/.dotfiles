@@ -1,45 +1,54 @@
 {
-    "tab_size": 4,
-    "vim_mode": false,
-    "theme": "Vesper",
-    "formatter": "auto",
-    "cursor_blink": false,
-    "cursor_shape": "block",
-    "buffer_font_size": 15,
-    "buffer_font_family": "TX-02",
-    "git_panel": {
-        "button": true,
-        "dock": "right",
-        "default_width": 340
+  "tab_size": 4,
+  "vim_mode": false,
+  "theme": "Vesper",
+  "formatter": "auto",
+  "cursor_blink": false,
+  "cursor_shape": "block",
+  "buffer_font_size": 15,
+  "buffer_font_family": "TX-02",
+  "git_panel": {
+    "button": true,
+    "dock": "right",
+    "default_width": 340,
+  },
+  "agent": {
+    "button": true,
+    "default_width": 340,
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-opus-4.5",
     },
-    "agent": {
-        "version": "2",
-        "button": true
+  },
+  "buffer_font_features": {
+    "calt": false,
+  },
+  "collaboration_panel": {
+    "button": false,
+  },
+  "features": {
+    "edit_prediction_provider": "none",
+  },
+  "outline_panel": {
+    "button": false,
+  },
+  "notification_panel": {
+    "button": false,
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "project_panel": {
+    "dock": "right",
+    "default_width": 340,
+  },
+  "languages": {
+    "JSON": {
+      "tab_size": 2,
     },
-    "buffer_font_features": {
-        "calt": false
+    "JSONC": {
+      "tab_size": 2,
     },
-    "chat_panel": {
-        "button": "never"
-    },
-    "collaboration_panel": {
-        "button": false
-    },
-    "features": {
-        "edit_prediction_provider": "none"
-    },
-    "outline_panel": {
-        "button": false
-    },
-    "notification_panel": {
-        "button": false
-    },
-    "telemetry": {
-        "diagnostics": false,
-        "metrics": false
-    },
-    "project_panel": {
-        "dock": "right",
-        "default_width": 340
-    }
+  },
 }
