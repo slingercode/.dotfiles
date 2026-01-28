@@ -7,9 +7,6 @@ source $ZSH/oh-my-zsh.sh
 # Path to personal dotfiles
 export DOTFILES=$HOME/.dotfiles
 
-# gpg
-export GPG_TTY=$(tty)
-
 # Path configuration
 export PATH=$PATH
 
@@ -22,6 +19,7 @@ export PATH=$PATH
 # Load additional (optional) configuration files
 [ -s $DOTFILES/.rc/.bunrc ] && source $DOTFILES/.rc/.bunrc
 [ -s $DOTFILES/.rc/.gorc ] && source $DOTFILES/.rc/.gorc
+[ -s $DOTFILES/.rc/.gpgrc ] && source $DOTFILES/.rc/.gpgrc
 [ -s $DOTFILES/.rc/.homebrewrc ] && source $DOTFILES/.rc/.homebrewrc
 [ -s $DOTFILES/.rc/.pnpmrc ] && source $DOTFILES/.rc/.pnpmrc
 [ -s $DOTFILES/.rc/.sopsrc ] && source $DOTFILES/.rc/.sopsrc

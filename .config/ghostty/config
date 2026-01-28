@@ -16,9 +16,11 @@ adjust-cell-width = 1%
 window-height = 28
 window-width = 110
 
+window-decoration = auto
 
 ## Configs
 
+auto-update-channel = tip
 
 window-inherit-working-directory = false
 

@@ -1,0 +1,5 @@
+export GPG_TTY=$(tty)
+
+if [[ $(uname) == "Darwin" ]] && [ -d "/opt/homebrew/opt/gnupg@2.2/bin" ]; then
+  export PATH=$PATH:/opt/homebrew/opt/gnupg@2.2/bin
+fi
