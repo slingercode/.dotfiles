@@ -22,16 +22,21 @@ window-decoration = auto
 
 auto-update-channel = tip
 
+tab-inherit-working-directory = false
 window-inherit-working-directory = false
 
 mouse-hide-while-typing = true
 
 shell-integration-features = no-cursor
 
-
 ## Keybindings
 
+keybind = performable:shift+ctrl+h=new_split:left
+keybind = performable:shift+ctrl+j=new_split:down
+keybind = performable:shift+ctrl+k=new_split:up
+keybind = performable:shift+ctrl+l=new_split:right
 
-keybind = shift+ctrl+l=new_split:right
-keybind = shift+ctrl+j=new_split:down
-
+keybind = performable:ctrl+h=goto_split:left
+keybind = performable:ctrl+j=goto_split:down
+keybind = performable:ctrl+k=goto_split:up
+keybind = performable:ctrl+l=goto_split:right

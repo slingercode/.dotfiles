@@ -1,53 +1,66 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$cmd_duration\
+$nodejs\
+$line_break\
+$character"""
+
+# ─────────────────────────────────────
+# Prompt Character
+# ─────────────────────────────────────
+
 [character]
 success_symbol = "[>](bold green)"
 error_symbol = "[x](bold red)"
 vicmd_symbol = "[<](bold green)"
 
-[git_commit]
-tag_symbol = " tag "
-
-[git_status]
-ahead = ">"
-behind = "<"
-diverged = "<>"
-renamed = "r"
-deleted = "x"
-
-[deno]
-symbol = "deno "
+# ─────────────────────────────────────
+# Directory
+# ─────────────────────────────────────
 
 [directory]
 read_only = " ro"
 
-[docker_context]
-symbol = "docker "
+# ─────────────────────────────────────
+# Git
+# ─────────────────────────────────────
 
 [git_branch]
-symbol = ""
+format = "[$branch]($style)"
 
-[golang]
-symbol = "go "
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\)'
+
+[git_status]
+format = '[$modified( $conflicted$untracked$staged$renamed$deleted)( \[$ahead_behind$stashed\])]($style)'
+conflicted = "!"
+deleted    = "✕"
+diverged   = "⇕"
+modified   = "*"
+renamed    = "→"
+staged     = "+"
+stashed    = "≡"
+untracked  = "?"
+
+# ─────────────────────────────────────
+# Command Duration
+# ─────────────────────────────────────
+
+[cmd_duration]
+format = " [$duration]($style)"
+style = "yellow"
+
+# ─────────────────────────────────────
+# Langs
+# ─────────────────────────────────────
 
 [nodejs]
-symbol = "nodejs "
-
-[memory_usage]
-symbol = "memory "
-
-# [package]
-# symbol = "pkg "
-
-[python]
-symbol = "py "
-
-[rust]
-symbol = "rs "
-
-[sudo]
-symbol = "sudo "
-
-[cmake]
-symbol = "cmake "
-
-[lua]
-symbol = "lua "
+format = " [$symbol$version]($style)"
+symbol = "node "
